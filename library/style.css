@@ -1,0 +1,38 @@
+.taxameter {
+    position: relative;
+    background: black;
+    color: red;
+    display: flex;
+    font-family: monospace;
+    font-size: 24pt;
+    width: 600px;
+    padding: 10px 10px 100px;
+}
+
+.taxameter>div {
+    flex: 1;
+}
+
+.knap {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid red;
+    width: 200px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.taxameter .slut {
+    display: none;
+}
+.taxameter .start {
+    display: block;
+}
+.taxameter.startet .slut {
+    display: block;
+}
+.taxameter.startet .start {
+    display: none;
+}
